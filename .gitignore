@@ -2,4 +2,4 @@
 /.build
 /Packages
 /*.xcodeproj
-CloudApp.xcconfig
+App.xcconfig

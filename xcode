@@ -2,7 +2,7 @@
 
 echo "Generating Xcode Project..."
 
-if [ ! -f /App.xcconfig ]; then
+if [ ! -f App.xcconfig ]; then
     touch App.xcconfig
 
     YOGA_LIB_PATH=$(find . -wholename '*/Sources/Yoga/darwin*' | head -n 1);

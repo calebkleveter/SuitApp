@@ -3,18 +3,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "CloudApp",
+    name: "App",
     platforms: [
         .macOS(.v10_13)
     ],
     products: [
-        .executable(name: "App", targets: ["CloudApp"]),
+        .executable(name: "App", targets: ["App"]),
     ],
     dependencies: [
         .package(url: "https://github.com/pmacro/Suit.git", .branch("master"))
     ],
     targets: [
-        .target(name: "CloudApp", dependencies: ["Suit"]),
-        .testTarget(name: "CloudAppTests", dependencies: ["CloudApp"]),
+        .target(name: "App", dependencies: ["Suit"]),
+        .testTarget(name: "AppTests", dependencies: ["App"]),
     ]
 )

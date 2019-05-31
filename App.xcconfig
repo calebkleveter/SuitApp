@@ -1,0 +1,8 @@
+MACOSX_DEPLOYMENT_TARGET = 10.13
+OTHER_LDFLAGS = -L./.build/checkouts/Yoga/Sources/Yoga/darwin18 -lc++
+MACOSX_DEPLOYMENT_TARGET = 10.13
+OTHER_LDFLAGS = -L./.build/checkouts/Yoga/Sources/Yoga/darwin18 -lc++
+MACOSX_DEPLOYMENT_TARGET = 10.13
+OTHER_LDFLAGS = -L./.build/checkouts/Yoga/Sources/Yoga/darwin18 -lc++
+MACOSX_DEPLOYMENT_TARGET = 10.13
+OTHER_LDFLAGS = -L./.build/checkouts/Yoga/Sources/Yoga/darwin18 -lc++

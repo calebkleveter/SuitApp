@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Suit",
+        "repositoryURL": "https://github.com/pmacro/Suit.git",
+        "state": {
+          "branch": "master",
+          "revision": "0ecb507f1aa925ea053a0f99803293ab9049f3f6",
+          "version": null
+        }
+      },
+      {
+        "package": "Yoga",
+        "repositoryURL": "https://github.com/pmacro/Yoga",
+        "state": {
+          "branch": "master",
+          "revision": "4d01700b15763f62b210616252c6ddba2237d72a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

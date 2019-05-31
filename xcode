@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "Generating Xcode Project..."
+swift package generate-xcodeproj --xcconfig-overrides CloudApp.xcconfig
+open CloudApp.xcodeproj

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "Building Project..."
+
+export YOGA_LIB_PATH=$(find . -wholename '*/Sources/Yoga/darwin*' | head -n 1)
+swift build -Xswiftc "-target" -Xswiftc "x86_64-apple-macos10.13" -Xlinker -lc++ -Xswiftc -L$YOGA_LIB_PATH

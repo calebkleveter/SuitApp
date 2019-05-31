@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
 echo "Generating Xcode Project..."
+
+if [ ! -f /CloudApp.xcconfig ]; then
+    touch CloudApp.xcconfig
+
+    YOGA_LIB_PATH=$(find . -wholename '*/Sources/Yoga/darwin*' | head -n 1);
+    echo "MACOSX_DEPLOYMENT_TARGET = 10.13" >> CloudApp.xcconfig
+    echo "OTHER_LDFLAGS = -L$YOGA_LIB_PATH -lc++" >> CloudApp.xcconfig
+fi
+
 swift package generate-xcodeproj --xcconfig-overrides CloudApp.xcconfig
 open CloudApp.xcodeproj
